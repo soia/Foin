@@ -1,0 +1,265 @@
+.ecosystem {
+
+
+    &__title-block {
+        margin: 20px 0 20px 265px;
+        color: $grey;
+        font-family: $boldFont;
+        font-weight: $medium;
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    &__body {
+        background-color: $bgColor;
+    }
+
+    &__convertor-payment {
+        display: flex;
+        justify-content: space-between;
+        margin: 40px 242px 0 242px;
+
+        &_left-side {
+
+        }
+
+        &_right-side {
+            width: 390px;
+            margin-top: 78px;
+
+            &-title {
+                color: $grey;
+                font-family: $boldFont;
+                font-size: 36px;
+                line-height: 46px;
+                margin-bottom: 16px;
+            }
+
+            &-subTitle {
+                color: $lightGrey;
+                font-family: $regularFont;
+                font-size: 20px;
+                line-height: 40px;
+                margin-bottom: 40px;
+                font-weight: 400;
+            }
+
+            &-btn {
+                @include btn-grey;
+            }
+        }
+
+        &_form {
+            box-shadow: 0 0 34px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            background-color: $white;
+            padding: 60px 82px 73px 79px;
+
+            &-title {
+                color: $grey;
+                font-family: $boldFont;
+                font-size: 24px;
+                line-height: 24px;
+            }
+
+            &-wrapperInput {
+                position: relative;
+                margin: 37px 0 0 21px;
+                border-bottom: 2px solid $grey;
+                padding: 7px 0 17px 0;
+
+                input {
+                    color: $grey;
+                    font-family: $regularFont;
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 28px;
+                    border: none;
+                    outline: none;
+                    background-color: transparent;
+
+                    &::-webkit-outer-spin-button,
+                    &::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+
+                    &::placeholder {
+                        color: #9b9b9b;
+                        font-family: $regularFont;
+                        font-size: 24px;
+                        font-weight: 400;
+                        line-height: 28px;
+                    }
+        
+                    &:focus::-webkit-input-placeholder { 
+                        color:transparent; 
+                    }
+        
+                    &:focus:-moz-placeholder { 
+                        color:transparent; 
+                    }
+                }
+    
+                label {
+                    position: absolute;
+                    top: -10px;
+                    color: #4a4a4a;
+                    font-family: $regularFont;
+                    font-size: 10px;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    line-height: 12px;
+                    text-transform: uppercase;
+                }
+            }
+
+            &-aprox {
+                display: flex;
+                align-items: center;
+                margin: 10px 0 10px 50px;
+
+                p {
+                    color: $blue;
+                    font-family: $boldFont;
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-transform: uppercase;
+                    margin-left: 12px;
+                }
+            }
+
+            &-btn {
+                @include btn-blue;
+                margin: 40px auto 0 21px;
+            }
+        }
+    }
+
+    &__assets-exchange {
+        display: flex;
+        justify-content: space-between;
+        margin: 40px 0 120px 242px;
+
+        &_left-side {
+            width: 390px;
+            margin: 78px 0 0 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            &-title {
+                color: $grey;
+                font-family: $boldFont;
+                font-size: 36px;
+                line-height: 46px;
+                margin-bottom: 16px;
+            }
+
+            &-subTitle {
+                color: $lightGrey;
+                font-family: $regularFont;
+                font-size: 20px;
+                line-height: 40px;
+                margin-bottom: 40px;
+                font-weight: 400;
+            }
+
+            &-btn {
+                @include btn-grey;
+            }
+        }
+
+        &_right-side {
+            img {
+                width: 975px;
+                height: 693px;
+            }
+        }
+
+    }
+
+    &__joining {
+        background-color: #f2f3f5;
+        padding: 90px 0 50px 134px; 
+
+        &_title {
+            color: $grey;
+            font-family: $boldFont;
+            font-size: 36px;
+            line-height: 46px;
+            margin-bottom: 16px;
+        }
+
+        &_form {
+            display: flex;
+
+            &-wrapperInput {
+                border-bottom: 2px solid $grey;
+                padding: 7px 0 35px 50px;
+                display: flex;
+                align-items: center;
+
+                input {
+                    color: $grey;
+                    font-family: $regularFont;
+                    font-size: 36px;
+                    font-weight: 400;
+                    line-height: 36px;
+                    border: none;
+                    outline: none;
+                    background-color: transparent;
+
+                    &::-webkit-outer-spin-button,
+                    &::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+
+                    &::placeholder {
+                        color: #9b9b9b;
+                        font-family: $regularFont;
+                        font-size: 36px;
+                        font-weight: 400;
+                        line-height: 36px;
+                    }
+        
+                    &:focus::-webkit-input-placeholder { 
+                        color:transparent; 
+                    }
+        
+                    &:focus:-moz-placeholder { 
+                        color:transparent; 
+                    }
+                }
+    
+                label {
+                    margin-right: 35px;
+                }
+            }
+
+            &-btn {
+                @include btn-blue;
+                margin-left: 70px;
+                align-self: flex-end;
+            }
+
+            &-sendEmail {
+                font-family: $regularFont;
+                font-size: 24px;
+                line-height: 24px;
+                font-weight: 400;
+                color: $dark;
+                margin-left: 22px;
+                display: flex;
+                align-items: flex-end;
+                padding-bottom: 20px;
+
+                a {
+                    text-decoration: none;
+                    color: $blue;
+                }
+            }
+        }
+    }
+}

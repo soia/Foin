@@ -1,0 +1,127 @@
+.faq {
+    margin: 20px 0 20px 265px;
+    color: $grey;
+    font-family: $boldFont;
+    font-weight: $medium;
+    font-size: 60px;
+    line-height: 60px;
+    text-transform: uppercase;
+
+    &__body {
+        background-color: $bgColor;
+    }
+}
+
+body .accordion {
+    padding: 0 133px;
+
+    .ui-accordion-header-collapsed:after {
+        transform: rotate(180deg);
+        top: 35%;
+    }
+
+    .ui-state-default {
+        background-color: $bgColor;
+        color: $lightGrey;
+        font-family: $regularFont;
+        font-weight: $medium;
+        outline: none;
+        height: 80px;
+        border: none;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-size: 24px;
+        line-height: 24px;
+        padding-left: 135px;
+        align-items: center;
+        display: flex;
+    }
+
+    .ui-state-active {
+        background-color: $blue;
+        color: $white;
+        border: none;
+    }
+
+    .ui-icon {
+        position: absolute;
+        left: 50px;
+        top: 50%;
+    }
+
+    .ui-state-hover {
+        background-color: $blue;
+        color: $white;
+        transition: all 0.25s;
+    }
+
+    .ui-accordion-header-collapsed {
+        &:hover {
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    }
+
+    .ui-accordion-header-collapsed {
+
+        &:hover {
+            .ui-icon {
+                background-image: url(../img/faq/plus-white.svg) !important;
+                background-position: center center;
+            }
+
+        }
+    }
+
+    .ui-accordion-header-collapsed .ui-icon-plus {
+        background-image: url(../img/faq/plus-grey.svg) !important;
+        background-position: center center;
+    }
+
+    .ui-accordion-content {
+        background-color: $blue;
+        color: $white;
+        font-family: $regularFont;
+        color: $white;
+        border: none;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        font-size: 16px;
+        line-height: 36px;
+        padding: 0 135px 44px 135px;
+    }
+
+    .accordion__title:after {
+        content: url(../img/faq/chevron-down-grey.svg);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 41px;
+        transition: all 0.25s;
+    }
+
+    .accordion__title {
+        &:hover {
+            &:after {
+                content: url(../img/faq/chevron-down-white.svg);
+            }
+        }
+    }
+
+    .ui-state-active:after {
+        content: url(../img/faq/chevron-down-white.svg);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) rotate(180deg);
+        right: 41px;
+        transition: all 0.25s;
+    }
+
+    .ui-accordion-content-active {
+        margin-bottom: 20px;
+    }
+
+    .ui-accordion-header-active {
+        margin-top: 20px;
+    }
+}

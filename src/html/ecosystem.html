@@ -1,0 +1,74 @@
+@@include('modules/html-head.html',{ "bodyClass": "ecosystem__body", "pageTitle": "Foin Ecosystem" })
+
+<main class="ecosystem">
+    <div class="ecosystem__title-block wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+        <section>
+            <h4 class="ecosystem__title-block_title">Foin Ecosystem </h4>
+        </section>
+    </div>
+
+    <div class="ecosystem__convertor-payment wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+        <div class="ecosystem__convertor-payment_left-side">
+            <form action="#" class="ecosystem__convertor-payment_form">
+                <h3 class="ecosystem__convertor-payment_form-title">
+                    Online convertor
+                </h3>
+                <div class="ecosystem__convertor-payment_form-wrapperInput">
+                    <label for="convertorEnter">You send</label>
+                    <input type="number" id="convertorEnter" placeholder="1.0">
+                </div>
+                <div class="ecosystem__convertor-payment_form-aprox">
+                    <img src="./assets/img/ecosystem/form-line.svg" alt="line">
+                    <p>≈ 3396.54 USD</p>
+                </div>
+                <div class="ecosystem__convertor-payment_form-wrapperInput">
+                    <label for="convertorEnter">Foin</label>
+                    <input type="number" id="convertorEnter" placeholder="No commission">
+                </div>
+
+                <button type="button" class="ecosystem__convertor-payment_form-btn">calculate</button>
+
+            </form>
+        </div>
+        <div class="ecosystem__convertor-payment_right-side">
+            <h3 class="ecosystem__convertor-payment_right-side-title">Payment system</h3>
+            <p class="ecosystem__convertor-payment_right-side-subTitle">Universal multicurrency payment system.
+                Keep your savings in one secure place. Conduct transactions and accept payments to your private account.
+                Works with BTC, ABC BTC, SV BTC, Litecoin, Ethereum, XRP, Tether, Monero, Dash. </p>
+            <a href="#" class="ecosystem__convertor-payment_right-side-btn">coming soon</a>
+        </div>
+    </div>
+
+    <div class="ecosystem__assets-exchange wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
+        <div class="ecosystem__assets-exchange_left-side">
+            <h3 class="ecosystem__assets-exchange_left-side-title">Assets Exchange</h3>
+            <p class="ecosystem__assets-exchange_left-side-subTitle">We support the business development community of
+                our ecosystem, and working for creating products that will make it easier for sellers and buyers to
+                interact with each other, for comfort and productive peer-to-peer deals.</p>
+            <a href="#" class="ecosystem__assets-exchange_left-side-btn">coming soon</a>
+        </div>
+        <div class="ecosystem__assets-exchange_right-side">
+                <img src="./assets/img/ecosystem/ipad.svg" alt="ipad">
+        </div>
+    </div>
+
+    <div class="ecosystem__joining wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5">
+        <h3 class="ecosystem__joining_title">Joining to community</h3>
+
+        <form action="#" class="ecosystem__joining_form">
+
+        <div class="ecosystem__joining_form-wrapperInput">
+            <label for="joinForm"><img src="./assets/img/ecosystem/mail.svg" alt="mail"></label>
+            <input type="email" id="joinForm" placeholder="Your email">
+        </div>
+
+        <button type="submit" class="ecosystem__joining_form-btn">send</button>
+
+        <p class="ecosystem__joining_form-sendEmail"> or email us at <a href="mailto:hello@foin.com">hello@foin.com</a></p>
+
+    </form>
+    </div>
+
+</main>
+
+@@include('modules/html-footer.html')
