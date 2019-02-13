@@ -4,9 +4,14 @@
         margin: 20px 0 20px 265px;
         color: $grey;
         font-family: $boldFont;
-        font-weight: $medium;
         font-size: 60px;
         line-height: 60px;
+
+        @media screen and (min-width: 768px) and (max-width: 1300px) { 
+            margin: 20px 0 20px 88px;
+            font-size: 48px;
+            line-height: 48px;
+        }
     }
 
     &__body {
@@ -15,13 +20,16 @@
 
     &__mobile-light {
         color: $grey;
-        font-family: $regularFont;
-        font-weight: $medium;
+        font-family: $boldFont;
         font-size: 36px;
         line-height: 36px;
         margin: 40px 0 80px 0;
         display: flex;
         justify-content: center;
+
+        @media screen and (min-width: 768px) and (max-width: 1300px) { 
+            margin: 40px 0 40px 0;
+        }
     }
 
     &__protection-MultiCoin {
@@ -29,12 +37,15 @@
         justify-content: space-between;
         margin: 0 172px 135px 172px;
 
+        @media screen and (min-width: 768px) and (max-width: 1300px) { 
+            margin: 0 88px 60px 88px;
+        }
+
         &_left-side, &_right-side {
             max-width: 470px;
 
             h3 {
-                font-family: $regularFont;
-                font-weight: $medium;
+                font-family: $boldFont;
                 color: $dark;
                 font-size: 24px;
                 line-height: 28px;
@@ -65,8 +76,7 @@
 
         h3 {
             color: $grey;
-            font-family: $regularFont;
-            font-weight: $medium;
+            font-family: $boldFont;
             font-size: 36px;
             line-height: 50px;
         }
@@ -77,15 +87,28 @@
         display: flex;
         justify-content: space-between;
 
+        @media screen and (min-width: 768px) and (max-width: 1300px) { 
+            margin: 0 0 0 88px;
+        }
+
         &_left-side, &_right-side {
 
         }
 
         &_left-side {
             margin-right: auto;
+
+            @media screen and (min-width: 768px) and (max-width: 1300px) { 
+                margin-right: 0;
+            }
         }
 
         &_center {
+
+            @media screen and (min-width: 768px) and (max-width: 1300px) { 
+                order: 1;
+                transform: translateX(50px);
+            }
 
             img {
                 width: 275px;
@@ -96,6 +119,11 @@
 
         &_right-side {
             margin-left: auto;
+
+            @media screen and (min-width: 768px) and (max-width: 1300px) { 
+                transform: translateX(50px);
+                margin-left: 0;
+            }
         }
 
         &_item {
@@ -113,8 +141,7 @@
 
             &-title {
                 color: $dark;
-                font-family: $regularFont;
-                font-weight: $medium;
+                font-family: $boldFont;
                 font-size: 24px;
                 line-height: 24px;
                 margin-top: 12px;
@@ -122,8 +149,7 @@
 
             &-titleGray {
                 color: $lightGrey;
-                font-family: $regularFont;
-                font-weight: $medium;
+                font-family: $boldFont;
                 font-size: 24px;
                 line-height: 24px;
                 margin-top: 12px;

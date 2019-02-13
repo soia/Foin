@@ -7,6 +7,16 @@
         left: 50%;
         transform: translate(-50%, -50%);
 
+        img {
+            width: 530px;
+            height: 210px;
+
+            @media screen and (min-width: 768px) and (max-width: 1300px) { 
+                width: 429px;
+                height: 169px;
+            }
+        }
+
         &_title, &_subTitle {
             color: $dark;
             font-family: $regularFont;

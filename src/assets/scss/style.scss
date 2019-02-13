@@ -5,11 +5,11 @@ html {
     height: 100%;
   }
 
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-    font-family: 'FuturaPT', sans-serif;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  font-family: 'FuturaPT', sans-serif;
 }
 
 @import "./utils/mixins-variables";
@@ -24,3 +24,4 @@ html {
 @import "./notFound";
 @import "./wallet";
 @import "./ecosystem";
+@import "./media";

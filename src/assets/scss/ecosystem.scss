@@ -1,5 +1,8 @@
 .ecosystem {
 
+    @media screen and (min-width: 768px) and (max-width: 1300px) { 
+        overflow: hidden;
+    }
 
     &__title-block {
         margin: 20px 0 20px 265px;
@@ -8,6 +11,12 @@
         font-weight: $medium;
         font-size: 60px;
         line-height: 60px;
+
+        @media screen and (min-width: 768px) and (max-width: 1300px) { 
+            margin: 20px 0 20px 88px;
+            font-size: 48px;
+            line-height: 48px;
+        }
     }
 
     &__body {
@@ -19,6 +28,10 @@
         justify-content: space-between;
         margin: 40px 242px 0 242px;
 
+        @media screen and (min-width: 768px) and (max-width: 1300px) { 
+            margin: 40px 50px 0 88px;
+        }
+
         &_left-side {
 
         }
@@ -26,6 +39,11 @@
         &_right-side {
             width: 390px;
             margin-top: 78px;
+
+            @media screen and (min-width: 768px) and (max-width: 1023px) { 
+                margin-top: 0;
+                width: 240px;
+            }
 
             &-title {
                 color: $grey;
@@ -42,6 +60,10 @@
                 line-height: 40px;
                 margin-bottom: 40px;
                 font-weight: 400;
+
+                @media screen and (min-width: 768px) and (max-width: 1023px) { 
+                    font-size: 16px;
+                }
             }
 
             &-btn {
@@ -55,6 +77,10 @@
             background-color: $white;
             padding: 60px 82px 73px 79px;
 
+            @media screen and (min-width: 768px) and (max-width: 1023px) { 
+                padding: 53px 63px 73px 63px;
+            }
+
             &-title {
                 color: $grey;
                 font-family: $boldFont;
@@ -67,6 +93,11 @@
                 margin: 37px 0 0 21px;
                 border-bottom: 2px solid $grey;
                 padding: 7px 0 17px 0;
+
+                @media screen and (min-width: 768px) and (max-width: 1023px) { 
+                    margin: 37px 0 0 0;
+                    width: 200px;
+                }
 
                 input {
                     color: $grey;
@@ -119,6 +150,10 @@
                 align-items: center;
                 margin: 10px 0 10px 50px;
 
+                @media screen and (min-width: 768px) and (max-width: 1300px) { 
+                    margin: 10px 0 10px 20px;
+                }
+
                 p {
                     color: $blue;
                     font-family: $boldFont;
@@ -132,6 +167,11 @@
             &-btn {
                 @include btn-blue;
                 margin: 40px auto 0 21px;
+
+                @media screen and (min-width: 768px) and (max-width: 1300px) { 
+                    margin: 40px auto 0 0;
+                    width: 200px;
+                }
             }
         }
     }
@@ -141,12 +181,22 @@
         justify-content: space-between;
         margin: 40px 0 120px 242px;
 
+        @media screen and (min-width: 768px) and (max-width: 1300px) { 
+            margin: 40px 0 88px 88px;
+            width: 100%;
+        }
+
         &_left-side {
             width: 390px;
             margin: 78px 0 0 24px;
             display: flex;
             flex-direction: column;
             justify-content: center;
+
+            @media screen and (min-width: 768px) and (max-width: 1300px) { 
+                width: 36%;
+                margin: 78px 0 0 0;
+            }
 
             &-title {
                 color: $grey;
@@ -163,6 +213,10 @@
                 line-height: 40px;
                 margin-bottom: 40px;
                 font-weight: 400;
+
+                @media screen and (min-width: 768px) and (max-width: 1300px) { 
+                    font-size: 16px;
+                }
             }
 
             &-btn {
@@ -171,8 +225,13 @@
         }
 
         &_right-side {
+
+            @media screen and (min-width: 768px) and (max-width: 1300px) { 
+                width: 60%;
+            }
+
             img {
-                width: 975px;
+                max-width: 975px;
                 height: 693px;
             }
         }
@@ -182,6 +241,10 @@
     &__joining {
         background-color: #f2f3f5;
         padding: 90px 0 50px 134px; 
+
+        @media screen and (min-width: 768px) and (max-width: 1300px) { 
+            padding: 90px 0 50px 88px;
+        }
 
         &_title {
             color: $grey;
@@ -194,11 +257,20 @@
         &_form {
             display: flex;
 
+            @media screen and (min-width: 768px) and (max-width: 1300px) { 
+                flex-wrap: wrap;
+            }
+
             &-wrapperInput {
                 border-bottom: 2px solid $grey;
                 padding: 7px 0 35px 50px;
                 display: flex;
                 align-items: center;
+
+                @media screen and (min-width: 768px) and (max-width: 1300px) { 
+                    width: 100%;
+                    margin-right: 25px;
+                }
 
                 input {
                     color: $grey;
@@ -242,6 +314,10 @@
                 @include btn-blue;
                 margin-left: 70px;
                 align-self: flex-end;
+
+                @media screen and (min-width: 768px) and (max-width: 1300px) { 
+                    margin: 30px 0 0 0;
+                }
             }
 
             &-sendEmail {
@@ -258,6 +334,7 @@
                 a {
                     text-decoration: none;
                     color: $blue;
+                    padding-left: 10px
                 }
             }
         }
