@@ -13,6 +13,12 @@
         line-height: 48px;
     }
 
+    @media screen and (max-width: 767px) { 
+        font-size: 32px;
+        line-height: 32px;
+        margin: 20px 0 20px 45px;
+    }
+
     &__body {
         background-color: $bgColor;
     }
@@ -23,6 +29,10 @@ body .accordion {
 
     @media screen and (min-width: 768px) and (max-width: 1300px) { 
         padding: 0 88px;
+    }
+
+    @media screen and (max-width: 767px) { 
+        padding: 0 45px;
     }
 
     .ui-accordion-header-collapsed:after {
@@ -49,6 +59,12 @@ body .accordion {
         @media screen and (min-width: 768px) and (max-width: 1300px) { 
             padding-left: 88px;
         }
+
+        @media screen and (max-width: 767px) { 
+            font-size: 16px;
+            line-height: 24px;
+            padding: 8px 33px 8px 50px;
+        }
     }
 
     .ui-state-active {
@@ -61,6 +77,10 @@ body .accordion {
         position: absolute;
         left: 27px;
         top: 50%;
+
+        @media screen and (max-width: 767px) { 
+            left: 20px;
+        }
     }
 
     .ui-state-hover {
@@ -99,6 +119,10 @@ body .accordion {
         @media screen and (min-width: 768px) and (max-width: 1300px) { 
             padding: 16px 88px 16px 88px;
         }
+
+        @media screen and (max-width: 767px) { 
+            padding: 16px 50px 16px 50px;
+        }
     }
 
     .ui-accordion-content-active {
@@ -111,6 +135,11 @@ body .accordion {
         border-bottom-right-radius: 10px;
         font-size: 16px;
         line-height: 36px;
+
+        @media screen and (max-width: 767px) {
+            font-size: 14px;
+            line-height: 24px;
+        }
     }
 
     .accordion__title:after {
@@ -119,7 +148,10 @@ body .accordion {
         top: 50%;
         transform: translateY(-50%);
         right: 41px;
-        
+
+        @media screen and (max-width: 767px) {
+            right: 20px;
+        }
     }
 
     .accordion__title {
@@ -134,9 +166,13 @@ body .accordion {
         content: url(../img/faq/chevron-down-white.svg);
         position: absolute;
         top: 50%;
+        top: 50%;
         transform: translateY(-50%) rotate(180deg);
         right: 41px;
-        transition: all 0.25s;
+
+        @media screen and (max-width: 767px) {
+            right: 20px;
+        }
     }
 
     .ui-accordion-header {

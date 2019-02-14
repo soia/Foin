@@ -4,6 +4,10 @@
         overflow: hidden;
     }
 
+    @media screen and (max-width: 767px) { 
+        overflow: hidden;
+    }
+
     &__title-block {
         margin: 20px 0 20px 265px;
         color: $grey;
@@ -16,6 +20,12 @@
             margin: 20px 0 20px 88px;
             font-size: 48px;
             line-height: 48px;
+        }
+
+        @media screen and (max-width: 767px) { 
+            margin: 20px 0 20px 45px;
+            font-size: 32px;
+            line-height: 32px;
         }
     }
 
@@ -32,8 +42,15 @@
             margin: 40px 50px 0 88px;
         }
 
-        &_left-side {
+        @media screen and (max-width: 767px) { 
+            margin: 40px 45px 0 45px;
+            flex-wrap: wrap;
+        }
 
+        &_left-side {
+            @media screen and (max-width: 767px) { 
+                width: 100%;
+            }
         }
 
         &_right-side {
@@ -45,12 +62,21 @@
                 width: 240px;
             }
 
+            @media screen and (max-width: 767px) { 
+                margin-top: 55px;
+            }
+
             &-title {
                 color: $grey;
                 font-family: $boldFont;
                 font-size: 36px;
                 line-height: 46px;
                 margin-bottom: 16px;
+
+                @media screen and (max-width: 767px) { 
+                    font-size: 24px;
+                    line-height: 44px;
+                }
             }
 
             &-subTitle {
@@ -64,10 +90,25 @@
                 @media screen and (min-width: 768px) and (max-width: 1023px) { 
                     font-size: 16px;
                 }
+
+                @media screen and (max-width: 767px) { 
+                    font-size: 14px;
+                    line-height: 34px;
+                }
             }
 
             &-btn {
                 @include btn-grey;
+
+                @media screen and (max-width: 767px) { 
+                    height: 48px;
+                    width: 100%;
+                    font-size: 14px;
+                    line-height: 16px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
             }
         }
 
@@ -81,11 +122,20 @@
                 padding: 53px 63px 73px 63px;
             }
 
+            @media screen and (max-width: 767px) { 
+                padding: 50px 30px;
+            }
+
             &-title {
                 color: $grey;
                 font-family: $boldFont;
                 font-size: 24px;
                 line-height: 24px;
+
+                @media screen and (max-width: 767px) { 
+                    font-size: 21px;
+                    line-height: 19px;
+                }
             }
 
             &-wrapperInput {
@@ -97,6 +147,10 @@
                 @media screen and (min-width: 768px) and (max-width: 1023px) { 
                     margin: 37px 0 0 0;
                     width: 200px;
+                }
+
+                @media screen and (max-width: 767px) { 
+                    margin: 37px 0 0 0;
                 }
 
                 input {
@@ -154,6 +208,10 @@
                     margin: 10px 0 10px 20px;
                 }
 
+                @media screen and (max-width: 767px) { 
+                    margin: 10px 0 10px 15px;
+                }
+
                 p {
                     color: $blue;
                     font-family: $boldFont;
@@ -172,6 +230,15 @@
                     margin: 40px auto 0 0;
                     width: 200px;
                 }
+
+                @media screen and (max-width: 767px) { 
+                    margin: 40px auto 0 0;
+                    width: 100%;
+                    height: 48px;
+                    width: 100%;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
             }
         }
     }
@@ -186,6 +253,13 @@
             width: 100%;
         }
 
+        @media screen and (max-width: 767px) { 
+            margin: 40px 0 40px 45px;
+            width: 100%;
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+        }
+
         &_left-side {
             width: 390px;
             margin: 78px 0 0 24px;
@@ -198,12 +272,23 @@
                 margin: 78px 0 0 0;
             }
 
+            @media screen and (max-width: 767px) { 
+                max-width: none;
+                width: 75%;
+                margin: 45px 0 0 0;
+            }
+
             &-title {
                 color: $grey;
                 font-family: $boldFont;
                 font-size: 36px;
                 line-height: 46px;
                 margin-bottom: 16px;
+
+                @media screen and (max-width: 767px) { 
+                    font-size: 24px;
+                    line-height: 44px;
+                }
             }
 
             &-subTitle {
@@ -217,22 +302,38 @@
                 @media screen and (min-width: 768px) and (max-width: 1300px) { 
                     font-size: 16px;
                 }
+
+                @media screen and (max-width: 767px) { 
+                    font-size: 14px;
+                    line-height: 34px;
+                }
             }
 
             &-btn {
                 @include btn-grey;
+
+                @media screen and (max-width: 767px) { 
+                    height: 48px;
+                    width: 100%;
+                    font-size: 14px;
+                    line-height: 16px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
             }
         }
 
         &_right-side {
 
-            @media screen and (min-width: 768px) and (max-width: 1300px) { 
-                width: 60%;
-            }
-
             img {
                 max-width: 975px;
-                height: 693px;
+                width: 100%;
+                height: auto;
+
+                @media screen and (min-width: 768px) and (max-width: 1300px) { 
+                    max-width: 499px;
+                }
             }
         }
 
@@ -246,18 +347,31 @@
             padding: 90px 0 50px 88px;
         }
 
+        @media screen and (max-width: 767px) { 
+            padding: 90px 45px 50px 45px; 
+        }
+
         &_title {
             color: $grey;
             font-family: $boldFont;
             font-size: 36px;
             line-height: 46px;
             margin-bottom: 16px;
+
+            @media screen and (max-width: 767px) { 
+                font-size: 24px;
+                line-height: 44px;
+            }
         }
 
         &_form {
             display: flex;
 
             @media screen and (min-width: 768px) and (max-width: 1300px) { 
+                flex-wrap: wrap;
+            }
+
+            @media screen and (max-width: 767px) { 
                 flex-wrap: wrap;
             }
 
@@ -272,6 +386,11 @@
                     margin-right: 25px;
                 }
 
+                @media screen and (max-width: 767px) { 
+                    padding: 7px 10px 10px 0;
+                    width: 100%;
+                }
+
                 input {
                     color: $grey;
                     font-family: $regularFont;
@@ -281,6 +400,12 @@
                     border: none;
                     outline: none;
                     background-color: transparent;
+
+                    @media screen and (max-width: 767px) { 
+                        font-size: 24px;
+                        line-height: 24px;
+                        width: 100%;
+                    }
 
                     &::-webkit-outer-spin-button,
                     &::-webkit-inner-spin-button {
@@ -294,6 +419,11 @@
                         font-size: 36px;
                         font-weight: 400;
                         line-height: 36px;
+
+                        @media screen and (max-width: 767px) { 
+                            font-size: 24px;
+                            line-height: 24px;
+                        }
                     }
         
                     &:focus::-webkit-input-placeholder { 
@@ -318,6 +448,13 @@
                 @media screen and (min-width: 768px) and (max-width: 1300px) { 
                     margin: 30px 0 0 0;
                 }
+
+                @media screen and (max-width: 767px) { 
+                    margin: 40px 0 20px 0;
+                    height: 48px;
+                    width: 100%;
+                    line-height: 14px;
+                }
             }
 
             &-sendEmail {
@@ -330,6 +467,15 @@
                 display: flex;
                 align-items: flex-end;
                 padding-bottom: 20px;
+
+                @media screen and (max-width: 767px) { 
+                    margin-left: 0;
+                    font-size: 18px;
+                    line-height: 18px;
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                }
 
                 a {
                     text-decoration: none;

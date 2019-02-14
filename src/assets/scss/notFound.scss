@@ -12,8 +12,15 @@
             height: 210px;
 
             @media screen and (min-width: 768px) and (max-width: 1300px) { 
-                width: 429px;
-                height: 169px;
+                max-width: 429px;
+                width: 100%;
+                height: auto;
+            }
+
+            @media screen and (max-width: 767px) { 
+                max-width: 257px;
+                width: 100%;
+                height: auto;
             }
         }
 
@@ -24,16 +31,25 @@
         }
 
         &_title {
-
             font-weight: $medium;
             font-size: 30px;
             line-height: 35px;
             margin: 44px 0 10px 0;
+
+            @media screen and (max-width: 767px) { 
+                font-size: 24px;
+                line-height: 28px;
+            }
         }
 
         &_subTitle {
             font-size: 20px;
             line-height: 23px;
+
+            @media screen and (max-width: 767px) { 
+                font-size: 12px;
+                line-height: 12px;
+            }
         }
     }
 
